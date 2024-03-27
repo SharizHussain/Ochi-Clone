@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@media screen and (max-width: 730px) {
+    .navbar div{
+        display: none;
+    }
+    .logo{
+        margin-left: -7vw;
+    }
+}
+
 @font-face {
     font-family: "founders-grotesk";
     src: url(./assets/fonts/FoundersGrotesk-Semibold.woff);
@@ -40,16 +49,31 @@
     object-position: center;
 }
 
+.readMore{
+    transition: 0.6s;
+    cursor: pointer;
+}
+.read_More{
+    transition: 0.6s;
+}
+.readMore:hover .read_More{
+    background-color: black;
+    width: 2vw;
+    height: 2vw;
+}
+
 .featured_btns{
     margin-top: 1vw;
     margin-bottom: 2.5vw;
+    align-items: center;
+    text-align: center;
 }
 
 .featured_btns div{
     position: relative;
     border-radius: 100px;
     border: 1px solid black;
-    padding: 4px 8px;
+    padding: 0.5vw 1vw;
 }
 
 .featured_btns div:hover{
@@ -63,8 +87,8 @@
     z-index: -11;
     position: absolute;
     transition: 0.4s;
-    margin: 0 0 0 -8px;
-    width: 100%;
+    margin: 0 0 0 -4.4px;
+    width: 105%;
     height: 0;
     bottom: -2vw;
     border-radius: 100px;

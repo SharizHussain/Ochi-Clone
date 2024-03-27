@@ -1,12 +1,13 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
+import {motion} from 'framer-motion'
 
 export default function Landing() {
   return (
     <div className='mb-[5vw]'>
         <div className='mt-[6.5vw] font-["founders-grotesk"] tracking-widest -ml-[5vw]'>
             {["we create","eye-opening","presentations"].map((item,index)=>{
-               return <div key={index} className='text-[10vw] font-thin leading-[7.5vw] flex items-center uppercase text-slate-100 ml-[10vw]'> {index===1 && <div className='bg-green-500 mt-3 rounded-lg mr-5 w-[10vw] h-[6vw]'></div>} {item} </div>
+               return <div key={index} className='text-[10vw] font-thin leading-[7.5vw] flex items-center uppercase text-slate-100 ml-[10vw]'> {index===1 && <motion.img src='src/assets/images/content-image01.jpg' initial={{ width:'0' }} animate={{ width:'10vw',}} transition={{ease: 'linear', duration: 0.5}} className='mt-3 rounded-lg mr-5 w-[10vw] h-[6vw]'/>} {item} </div>
             })}
         </div>
         <hr className='mt-[6vw]'/>

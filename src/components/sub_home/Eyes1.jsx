@@ -32,8 +32,8 @@ export default function Eyes1() {
             <div className='rounded-full absolute w-[15vw] h-[15vw] bg-slate-100 ml-[17vw]'></div>
                 <div className='rounded-full absolute w-[10vw] h-[10vw] bg-slate-800 -ml-[17vw]'></div>
                 <div className='rounded-full absolute w-[10vw] h-[10vw] bg-slate-800 ml-[17vw]'></div>
-                    <div className='font-["neue-montreal"] absolute text-slate-100 ml-[17vw]'>PLAY</div>
-                    <div className='font-["neue-montreal"] absolute text-slate-100 -ml-[17vw]'>PLAY</div>
+                    <div className='font-["neue-montreal"] absolute text-slate-100 ml-[17vw] text-[1.3vw]'>PLAY</div>
+                    <div className='font-["neue-montreal"] absolute text-slate-100 -ml-[17vw] text-[1.3vw]'>PLAY</div>
                         <div className='rounded-full absolute w-[9.8vw] h-[1.3vw] bg-transparent ml-[17vw] flex justify-start' style={{ transform: `rotate(${rotate}deg)` }}>
                             <div className='rounded-full absolute w-[1.3vw] h-[1.3vw] bg-slate-100'></div>      
                         </div>
