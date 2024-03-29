@@ -8,7 +8,7 @@ import Featured_projects from "./sub_home/Featured_projects"
 function Home() {
   
   return (
-    <div className="bg-zinc-800 w-full overflow-hidden">
+    <div data-scroll data-scroll-speed="0" className="home bg-zinc-800 w-full overflow-hidden">
         <Landing />
         <Section2/>
         <About/>

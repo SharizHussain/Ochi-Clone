@@ -7,10 +7,10 @@ import img4 from '/src/assets/images/PB-Front-4-663x551.png'
 export default function Featured_projects() {
   return (
     <>
-        <div className='bg-[#F1F1F1] pb-4 font-["neue-montreal"]'>
+        <div className='featured bg-[#F1F1F1] absolute pb-4 font-["neue-montreal"]'>
             <h1 className='text-[4vw] font-["neue-montreal"] ml-[4vw] text-slate-900 pt-[5vw]'>Featured projects</h1> 
             <hr className='mt-[2vw] w-full h-0.5 bg-slate-400'/>
-            <div className='flex flex-wrap justify-around items-center p-[2vw] text-[1.1vw] tracking-wide'>
+            <div id='flex' className='flex flex-wrap justify-around items-center p-[2vw] text-[1.1vw] tracking-wide'>
                 <div className='w-[45vw] -mr-[3vw]'>
                     <div className='flex -mb-[1vw] items-center'>
                         <div className='text-[7vw] -mt-[4.6vw]'>.</div>

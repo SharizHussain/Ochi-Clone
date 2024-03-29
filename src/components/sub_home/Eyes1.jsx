@@ -26,7 +26,7 @@ export default function Eyes1() {
 
   return (
     <>
-        <div className='eyes w-full bg-[#f4f4f4] relative flex justify-center items-center'>
+        <div data-scroll data-scroll-speed="-.1" className='eyes mt-[50vw] w-full bg-[#f4f4f4] relative flex justify-center items-center'>
             <img src={img1} alt="img1" />
             <div className='rounded-full absolute w-[15vw] h-[15vw] bg-slate-100 -ml-[17vw]'></div>
             <div className='rounded-full absolute w-[15vw] h-[15vw] bg-slate-100 ml-[17vw]'></div>

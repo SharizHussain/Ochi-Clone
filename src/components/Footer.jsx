@@ -10,8 +10,19 @@ const Footer = () => {
     })
   }
 
+  // useEffect(() => {
+
+  //   let screenX = window.screenX
+  //   if (screenX<440) {
+  //     document.querySelector(".navbar").classList.add("navbar2")
+  //     document.querySelector(".navbar2").classList.remove("navbar")
+  //   }
+
+  // }, [])
+  
+
   return (
-    <footer className="bg-gray-800 text-white py-12">
+    <footer className="footer bg-gray-800 mt-[115vw] text-white py-[4vw] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -65,24 +76,11 @@ const Footer = () => {
 
             <div className="navbar flex font-['neue-montreal'] justify-between items-center ml-[11vw] px-12 py-4">
               <div className="navs flex gap-[3vw] text-center text-slate-100">
-                {" "}
-                {[
-                  "Services",
-                  "Our work",
-                  "About us",
-                  "Insights",
-                  "Contact us",
-                ].map((item, index) => {
-                  return (
-                    <nav key={index} className="cursor-pointer">
-                      {index === 4 ? (
-                        <nav className=""> {item} </nav>
-                      ) : (
-                        <nav> {item} </nav>
-                      )}
-                    </nav>
-                  );
-                })}
+                <div>Services</div>
+                <div>Our work</div>
+                <div>About us</div>
+                <div>Insights</div>
+                <div>Contact us</div>
               </div>
             </div>
           </div>
