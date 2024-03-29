@@ -33,7 +33,7 @@ export default function About() {
           </div>
         </div>
         <div className="w-full h-[1px] bg-zinc-800 mt-20"> </div>
-        <div className="flex justify-between w-full p-5 pb-10 px-10">
+        <div className="flex justify-between w-full py-5 pb-10 px-10">
           <h1 className="text-[4vw] text-[#212121] relative">Our approach:</h1>
           <div className="readMore absolute mt-[8vw] rounded-3xl w-[12vw] h-[4vw] text-[1.4vw] text-white flex text-center leading-tight items-center justify-center p-2 bg-[#212121] hover:bg-white hover:text-black">
             Read More{" "}

@@ -90,7 +90,7 @@
     .eyes{
         position: static;
         margin-top: -5vw;
-        z-index: 9;
+        z-index: 90;
     }
     .featured{
         position: static;
@@ -121,6 +121,30 @@
         position: static;
         padding: 14vw 0;
         margin-top: 0vw;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .section2{
+        position: static;
+        margin-top: 0;
+    }
+
+    #about{
+        position: static;
+        margin-top: 0;
+    }
+    .eyes{
+        position: static;
+        margin-top: 0vw;
+    }
+    .featured{
+        position: static;
+        margin-top: 0;
+    }
+    .footer{
+        position: static;
+        margin-top: 0;
     }
 }
 
