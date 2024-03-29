@@ -1,15 +1,28 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import img from '../../assets/images/content-image01.jpg'
-import { motion } from 'framer-motion';
+import { useAnimate, motion } from 'framer-motion';
 
 export default function Landing() {
+
+  const [scope, animate] = useAnimate()
+
+  useEffect(() => {
+    let x = window.innerWidth
+    if(x<430){
+      animate(scope.current, {marginLeft: "25vw"}, {duration:"1.2", ease:"easeIn"})
+    }
+    else{
+      animate(scope.current, {marginLeft:"22vw"}, {duration:"1.2", ease:"easeIn"})
+    }
+  }, [])
+  
   return (
     <div data-scroll data-scroll-speed="-.3" className='landing mb-[5vw] -z-[10]'>
         <div className='mt-[6.5vw] relative font-["founders-grotesk"] tracking-widest -ml-[5vw]'>
           <div className='landing_text text-[10vw] font-thin leading-[7.5vw] flex items-center uppercase text-slate-100 ml-[10vw]'>we create</div>
-          <img src={img} className='landing_img absolute mt-[1.3vw] rounded-lg ml-[10vw] w-[10vw] h-[6vw]'/>
-          <div className='landing_text text-[10vw] font-thin leading-[7.5vw] flex items-center uppercase text-slate-100 ml-[22vw]'> eye-opening</div>
+          <img src={img} className='landing_img -z-10 absolute mt-[1.3vw] rounded-lg ml-[10vw] w-[10vw] h-[6vw]'/>
+          <motion.div ref={scope} initial={{marginLeft:"5vw"}} className='landing_text z-10  bg-[#27272A] text-[10vw] font-thin leading-[7.5vw] flex items-center uppercase text-slate-100 ml-[22vw]'> eye-opening</motion.div>
           <div className='landing_text text-[10vw] font-thin leading-[7.5vw] flex items-center uppercase text-slate-100 ml-[10vw]'>presentations</div>
         </div>
         <hr className='mt-[6vw]'/>
