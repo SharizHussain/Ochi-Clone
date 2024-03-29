@@ -38,15 +38,13 @@
         font-size: 14vw;
         line-height: 11vw;
     }
-    .landing_text:nth-child(2){
-        position: relative;
-        margin-left: 25vw;
+    .landing_text:nth-child(3){
+        margin-left: 26vw;
     }
     .landing_img{
         position: absolute;
-        margin-left: -15vw;
-        margin-top: 8px;
         border-radius: 5px;
+        margin-top: 6px;
         width: 14vw;
         height: 9vw;
     }
